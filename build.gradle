@@ -27,6 +27,15 @@ repositories {
 
 
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter-web')
-	testCompile('org.springframework.boot:spring-boot-starter-test')
+	compile("org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16")
+	compile("org.projectlombok:lombok:1.14.8")
+    compile("org.springframework.boot:spring-boot-starter-jdbc:${springBootVersion}")
+    compile("org.postgresql:postgresql:9.4-1206-jdbc41")
+	compile("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
+	compile("org.springframework.boot:spring-boot-starter-actuator:${springBootVersion}")
+	compile("org.mybatis:mybatis:3.3.0")
+    compile("org.mybatis:mybatis-spring:1.2.3")
+	testCompile("org.springframework.boot:spring-boot-starter-test")
 }
+
+
